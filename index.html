@@ -6,7 +6,8 @@
     <title>Delivery Food - доставка еды на дом</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/animate.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
 
 
 
@@ -19,14 +20,20 @@
             </a>
             <input type="text" class="input input-address" placeholder="Адрес доставки"/>
             <div class="buttons">
-                <button class="button button-primary">
+                <span class="user-name"></span>
+                <button class="button button-primary button-auth">
                     <img src="img/user.svg" alt="user" class="button-icon"/>
                     <span class="button-text">Войти</span>
                 </button>
-                <button class="button">
-                    <img src="img/shopping-cart.svg" alt="shopping cart" class="button-icon" />
-                        <span class="button-text">Корзина</span>
+                <button class="button button-primary button-out">
+                    <span class="button-text">Выйти</span>
+                    <span class="button-out-svg"></span>
                 </button>
+                <button class="button" id="cart-button">
+                    <img src="img/shopping-cart.svg" alt="shopping cart" class="button-icon" />
+                    <span class="button-text">Корзина</span>
+                </button>
+                
             </div>
         </header>
     </div>
@@ -48,10 +55,10 @@
                         </div>
                 <div class="cards">
                     <a href="restauran.html" class="card">
-                        <img src="/img/1.png" alt="image1" class="card-image">
+                        <img src="img/pizza1.jpg" alt="image1" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
-                                <h3 class="card-title">Пицца плюс</h3>
+                                <h3 class="card-title">IQ Pizza</h3>
                                 <span class="card-tag tag">20 мин</span>
                             </div>
                             <!-- /.card-heading -->
@@ -70,10 +77,10 @@
                     <!-- /.card -->
                 
                     <a href="restauran.html" class="card">
-                        <img src="/img/2.png" alt="image1" class="card-image">
+                        <img src="img/pita.jpg" alt="image1" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
-                                <h3 class="card-title">Тануки</h3>
+                                <h3 class="card-title">MAVRA PIZZA</h3>
                                 <span class="card-tag tag">30 мин</span>
                             </div>
                             <!-- /.card-heading -->
@@ -92,10 +99,10 @@
                     <!-- /.card -->
                 
                     <a href="restauran.html" class="card">
-                        <img src="/img/3.png" alt="image1" class="card-image">
+                        <img src="img/potato.png" alt="image1" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
-                                <h3 class="card-title">Жадина-пицца</h3>
+                                <h3 class="card-title">Білий Налив</h3>
                                 <span class="card-tag tag">30 мин</span>
                             </div>
                             <!-- /.card-heading -->
@@ -114,10 +121,10 @@
                     <!-- /.card -->
                 
                     <a href="restauran.html" class="card">
-                        <img src="/img/4.png" alt="image1" class="card-image">
+                        <img src="img/nagets.jpg" alt="image1" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
-                                <h3 class="card-title">Жадина-пицца</h3>
+                                <h3 class="card-title">Білий Налив</h3>
                                 <span class="card-tag tag">40 мин</span>
                             </div>
                             <!-- /.card-heading -->
@@ -132,14 +139,14 @@
                             <!-- /.card-info -->
                         </div>
                         <!-- /.card-text -->
-                    </a>
+                        </av>
                         <!-- /.card -->
                 
-                    <a href="restauran.html" class="card">
-                            <img src="/img/5.png" alt="image1" class="card-image">
+                        <a href="restauran.html" class="card">
+                            <img src="img/pizza2.jpg" alt="image1" class="card-image">
                             <div class="card-text">
                                 <div class="card-heading">
-                                    <h3 class="card-title">Точка еды</h3>
+                                    <h3 class="card-title">IQ Pizza</h3>
                                     <span class="card-tag tag">20 мин</span>
                                 </div>
                                 <!-- /.card-heading -->
@@ -154,14 +161,14 @@
                                 <!-- /.card-info -->
                             </div>
                             <!-- /.card-text -->
-                    </a>
+                        </a>
                         <!-- /.card -->
                 
-                    <a href="restauran.html" class="card">
-                            <img src="/img/6.png" alt="image1" class="card-image">
+                        <a href="restauran.html" class="card">
+                            <img src="img/pizza3.jpg" alt="image1" class="card-image">
                             <div class="card-text">
                                 <div class="card-heading">
-                                    <h3 class="card-title">FoodBand</h3>
+                                    <h3 class="card-title">MAVRA PIZZA</h3>
                                     <span class="card-tag tag">40 мин</span>
                                 </div>
                                 <!-- /.card-heading -->
@@ -176,7 +183,7 @@
                                 <!-- /.card-info -->
                             </div>
                             <!-- /.card-text -->
-                    </a>
+                        </a>
                         <!-- /.card -->
                 </div>
                     </section>
@@ -190,9 +197,9 @@
                 <img src="img/logo.svg" alt="logo" class="logo footer-logo">
                 <nav class="footer-nav">
                     <a href="#" class="footer-link">Ресторанам</a>
-                    <a href="#" class="footer-link">Курьерам</a>
-                    <a href="#" class="footer-link">Пресс-центр</a>
-                    <a href="#" class="footer-link">Контакты</a>
+                    <a href="#" class="footer-link">Кур'єрам</a>
+                    <a href="#" class="footer-link">Прес-центр</a>
+                    <a href="#" class="footer-link">Контакти</a>
                 </nav>
                 <div class="social-links">
                     <a href="#" class="social-link"><img src="img/instagram.svg" alt="instagram"></a>
@@ -203,6 +210,93 @@
         </div>
     </footer>
     
+        <div class="modal">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <h3 class="modal-title">Корзина</h3>
+                    <button class="close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="food-row">
+                        <span class="food-name">Ролл угорь стандарт</span>
+                        <strong class="food-price">250 ₴</strong>
+                        <div class="food-counter">
+                            <button class="counter-button">-</button>
+                            <span class="counter">1</span>
+                            <button class="counter-button">+</button>
+                        </div>
+                    </div>
+        
+                    <div class="food-row">
+                        <span class="food-name">Ролл угорь стандарт</span>
+                        <strong class="food-price">250 ₴</strong>
+                        <div class="food-counter">
+                            <button class="counter-button">-</button>
+                            <span class="counter">1</span>
+                            <button class="counter-button">+</button>
+                        </div>
+                    </div>
+        
+                    <div class="food-row">
+                        <span class="food-name">Ролл угорь стандарт</span>
+                        <strong class="food-price">250 ₴</strong>
+                        <div class="food-counter">
+                            <button class="counter-button">-</button>
+                            <span class="counter">1</span>
+                            <button class="counter-button">+</button>
+                        </div>
+                    </div>
+        
+                    <div class="food-row">
+                        <span class="food-name">Ролл угорь стандарт</span>
+                        <strong class="food-price">250 ₴</strong>
+                        <div class="food-counter">
+                            <button class="counter-button">-</button>
+                            <span class="counter">1</span>
+                            <button class="counter-button">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <span class="modal-pricetag">1250 ₴</span>
+                    <div class="footer-buttons">
+                        <button class="button button-primary">Оформить заказ</button>
+                        <button class="button">Отмена</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="modal-auth">
+    <div class="modal-dialog modal-dialog-auth">
+        <div class="modal-header">
+            <h3 class="modal-title"></h3>
+            <button class="close-auth">&times;</button>
+        </div>
+        <form id="logInForm">
+            <fieldset class="modal-body">
+                <legend class="modal-title">Авторизация</legend>
+                <label class="label-auth">
+                    <span>Логин</span>
+                    <input id="login" type="text">
+                </label>
+                <label class="label-auth">
+                    <span>Пароль</span>
+                    <input id="password" type="password">
+                </label>
+            </fieldset>
+
+            <div class="modal-footer">
+                <div class="footer-buttons">
+                    <button class="button button-primary button-login" type="submit">Войти</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+        <script src="js/main.js"></script>
+        <script src="js/wow.min.js"></script>
 
 </body>
 </html>
